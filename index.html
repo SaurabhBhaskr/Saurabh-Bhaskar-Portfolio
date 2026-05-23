@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Saurabh <span>Bhaskar</span>
+        </div>
+        <div class="nav-container">
+            <div class="links">
+                <a href="#" data-popup="home">Home</a>
+                <a href="#" data-popup="skills">Skills</a>
+                <a href="#" data-popup="introduction">Introduction</a>
+                <a href="#" data-popup="services">Services</a>
+                <a href="#" data-popup="contact">Contact</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#" data-popup="home" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">Home</a>
+                <a href="#" data-popup="skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">Skills</a>
+                <a href="#" data-popup="introduction" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">Introduction</a>
+                <a href="#" data-popup="services" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">Services</a>
+                <a href="#" data-popup="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="content">
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">Hey I'm <span>Saurabh</span></h1>
+                <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800" class="typewriter">
+                    I'm a <span class="typewriter-text"></span><span class="cursor">|</span>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1000">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid libero quia ipsum unde, vero in nisi ad perspiciatis? Totam porro, earum distinctio cumque soluta repellendus eum aspernatur cupiditate molestiae accusantium.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/saurabh-bhaskar-112072281?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.reddit.com/user/Saurabh0x1/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button" target="_blank" rel="noopener noreferrer" aria-label="Reddit profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-reddit-alien"></i>
+                    </a>
+                    <a href="https://www.instagram.com/saurabh0x1?utm_source=qr&igsh=MTFiMW84ZWU0aTF4Ng==" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://discordapp.com/users/bruce_wayne_bat" target="_blank" rel="noopener noreferrer" aria-label="Discord profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </div>
+                <button class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">Download CV</button>
+            </div>
+
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="Screenshot 2026-04-10 153103.png" alt="Saurabh Bhaskar portrait">
+            </div>
+        </div>
+    </section>
+
+    <div class="popup-overlay" id="popupOverlay" aria-hidden="true">
+        <div class="popup-box" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+            <button class="popup-close" type="button" aria-label="Close popup">&times;</button>
+            <h2 id="popupTitle"></h2>
+            <p id="popupText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        if (window.AOS) {
+            AOS.init({ offset: 0 });
+        }
+    </script>
+</body>
+</html>
