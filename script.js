@@ -84,7 +84,7 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-const texts = ["Web Developer", "Graphic Designer", "Content Creator"];
+const texts = ["Web Developer", "Graphic Designer", "Software Developer"];
 
 const speed = 100;
 const textElement = document.querySelector(".typewriter-text");
