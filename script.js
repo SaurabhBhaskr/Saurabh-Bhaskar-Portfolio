@@ -15,7 +15,7 @@ const popupContent = {
     },
     skills: {
         title: "Skills",
-        text: "I work with HTML, CSS, JavaScript, responsive design, graphic design tools, and content creation."
+        text: "I work with HTML, CSS, JavaScript, responsive design, graphic design tools, and also knowledge of Java, Spring Boot, and MySQL."
     },
     introduction: {
         title: "Introduction",
@@ -23,11 +23,11 @@ const popupContent = {
     },
     services: {
         title: "Services",
-        text: "I can help with portfolio websites, landing pages, basic frontend projects, graphic design work, and social media content."
+        text: "I can help with portfolio websites, landing pages, basic frontend projects, graphic design work with great backend development."
     },
     contact: {
         title: "Contact",
-        text: "You can add your email, phone number, LinkedIn, Instagram, or any contact details here."
+        text: "Mail me at iamsaurabhbhaskr@gmail.com or connect with me on LinkedIn at linkedin.com/in/saurabh-bhaskr or call on: 9234530225."
     }
 };
 
