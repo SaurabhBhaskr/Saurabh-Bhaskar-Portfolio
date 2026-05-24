@@ -237,6 +237,9 @@ section {
 }
 
 .content .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     min-width: 160px;
     height: 6vh;
@@ -245,6 +248,7 @@ section {
     color: white;
     border: none;
     font-size: 1rem;
+    text-decoration: none;
     outline: none;
     font-weight: 700;
     border-radius: 5px;
